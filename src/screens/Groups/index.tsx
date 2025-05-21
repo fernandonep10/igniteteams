@@ -23,7 +23,7 @@ export default function Groups() {
           <ListEmpty message="Que tal cadastrar a primeira turma?" />
         )}
       />
-      <Button title="Criar nova turma" type={"SECONDARY"} />
+      <Button title="Criar nova turma" />
     </S.Container>
   );
 }
