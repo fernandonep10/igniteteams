@@ -11,7 +11,7 @@
       "@storage/*": ["./src/storage/*"],
       "@utils/*": ["./src/utils/*"],
       "@theme/*": ["./src/theme/*"]
-    }
-    //"types": ["styled-components", "styled-components/native"]
+    },
+    "types": ["styled-components", "styled-components/native"]
   }
 }
