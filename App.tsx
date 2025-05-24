@@ -20,8 +20,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       {/* {fontsLoaded ? <NewGroup /> : <Loading />} */}
-      {/* <Groups /> */}
-      <Players />
+      <Groups />
+      {/* <Players /> */}
     </ThemeProvider>
   );
 }
