@@ -23,8 +23,7 @@
     },
     "androidNavigationBar": {
       "barStyle": "dark-content",
-      "backgroundColor": "#000000",
-      "visible": "sticky-immersive"
+      "backgroundColor": "#000000"
     },
     "web": {
       "favicon": "./assets/favicon.png"
