@@ -1,10 +1,15 @@
+import React, { forwardRef } from "react";
 import * as S from "./styles";
-import { TextInputProps } from "react-native";
+import { TextInput, TextInputProps } from "react-native";
 import { useTheme } from "styled-components/native";
 
-export default function Input({ ...rest }: TextInputProps) {
-  //exemplo de como acessar o tema fora de um contexto de um componente syled component
-  const { COLORS } = useTheme();
+type Props = TextInputProps;
 
-  return <S.Container placeholderTextColor={COLORS.GRAY_300} {...rest} />;
-}
+const Input = forwardRef<TextInput, Props>((props, ref) => {
+  const { COLORS } = useTheme();
+  return (
+    <S.Container placeholderTextColor={COLORS.GRAY_300} ref={ref} {...props} />
+  );
+});
+
+export default Input;
